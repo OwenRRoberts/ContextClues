@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         h3.addEventListener('click', function() {
             //creating randomized accusations of everything and everyone
-            let friend = friends[Math.floor(Math.random() * friends.length)];
-            let place = places[Math.floor(Math.random() * places.length)];
-            let weapon = weapons[Math.floor(Math.random() * weapons.length)];
+            var friend = friends[i % 5];
+            var place = places[i % 5];
+            var weapon = weapons[i % 5];
 
             alert("Accusation " + i + ": I accuse " + friend + ", with the " + weapon + " in " + place + "!");
         });
